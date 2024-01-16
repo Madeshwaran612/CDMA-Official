@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.madesh.CDMA_Official">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ccc"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ccc"
+        android:supportsRtl="true"
+        android:theme="@style/splash">
+        <activity android:name="com.madesh.CDMA_Official.MainActivity3">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.madesh.CDMA_Official.Judges.Timer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Judges.Judge_4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Judges.Judge_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Judges.Judge_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Judges.Judge_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Authentication.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Authentication.Register"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.madesh.CDMA_Official.Services.MyFirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7842166538836228~7707940724" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.madesh.CDMA_Official.MainActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.ScoreSheet.Mallakhamb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.ScoreSheet.HangingMallakhamb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.ScoreSheet.RopeMallakhamb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.ScoreSheet.PoleMallakhamb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Clubs.Eagle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Clubs.RpfAyanavaram"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Clubs.Csk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Clubs.RpfIcf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madesh.CDMA_Official.Clubs.Tamizhan"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.madesh.CDMA_Official.MainActivity" />
+    </application>
+
+</manifest>

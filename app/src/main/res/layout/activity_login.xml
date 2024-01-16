@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.Login"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:fontFamily="@font/aclonica"
+      android:text="Chennai District Mallakhamb "
+      android:textColor="#FA0606"
+      android:textSize="22sp"
+      android:textStyle="bold"
+      android:layout_gravity="center"/>
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/aclonica"
+      android:text="Association"
+      android:textColor="#FA0606"
+      android:textSize="22sp"
+      android:textStyle="bold"
+      android:layout_gravity="center"/>
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:layout_gravity="center"
+      android:fontFamily="@font/aladin"
+      android:text="Login to your Account"
+      android:textColor="#470505"
+      android:textSize="30sp"
+      android:layout_marginTop="16dp" />
+
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginLeft="8dp"
+      android:ems="10"
+      android:layout_height="wrap_content"
+      android:background="#37510202"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:padding="10dp"
+      android:textAlignment="center"
+      android:layout_gravity="center"
+      android:textColor="#0B0B0B"
+      android:textColorHint="#ffffff"
+      android:layout_marginTop="8dp"/>
+
+  <EditText
+      android:id="@+id/password20"
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="#37510202"
+      android:ems="10"
+      android:hint="Password"
+      android:textAlignment="center"
+      android:inputType="textPassword"
+      android:padding="10dp"
+      android:textColor="#0B0B0B"
+      android:textColorHint="#ffffff"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/email" />
+
+  <Button
+      android:id="@+id/reg.but"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="LOGIN NOW"
+      app:backgroundTint="#D5530505"
+      android:layout_gravity="center" />
+
+  <TextView
+      android:id="@+id/regText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Not Registered? Register Here"
+      android:textColor="#FF0000"
+     android:layout_gravity="center"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/forgetText"
+      android:layout_width="205dp"
+      android:layout_height="29dp"
+      android:gravity="center"
+      android:text="Forgot Password? Click Here"
+      android:textAllCaps="false"
+      android:textColor="#ff0000"
+     android:layout_marginTop="8dp"
+      android:layout_gravity="center"/>
+
+  <ProgressBar
+      android:id="@+id/progressBarlogin"
+      style="?android:attr/progressBarStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      android:layout_marginTop="8dp"
+      android:layout_gravity="center"/>
+
+</LinearLayout>

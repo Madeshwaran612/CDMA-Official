@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_drawer"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_stream_drawer"
+            android:icon="@drawable/ic_baseline_live_tv_24"
+            android:title="Stream" />
+        <item
+            android:id="@+id/nav_clubs_drawer"
+            android:icon="@drawable/ic_baseline_groups_24"
+            android:title="clubs" />
+        <item
+            android:id="@+id/nav_videos_drawer"
+            android:icon="@drawable/ic_baseline_video_library_24"
+            android:title="Videos" />
+    </group>
+
+    <item
+        android:title="ScoreCard"
+        android:checkableBehavior="single">
+        <menu>
+        <item
+            android:id="@+id/hanging"
+            android:icon="@drawable/ic_hanging"
+            android:title="Hanging Mallakhamb" />
+        <item
+            android:id="@+id/pole"
+            android:icon="@drawable/ic_pole"
+            android:title="Pole Mallakhamb" />
+        <item
+            android:id="@+id/rope"
+            android:icon="@drawable/ic_rope"
+            android:title="Rope Mallakhamb" />
+        </menu>
+    </item>
+
+
+</menu>

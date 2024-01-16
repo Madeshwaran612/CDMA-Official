@@ -1,0 +1,3196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+
+<!--    android:background="@android:color/transparent">-->
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/UserChoice"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/chiefJudge"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:text="Chief Judge" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/judges"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/chiefJudge"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="45dp"-->
+<!--                        android:text="Judge" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/timer"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/judges"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="45dp"-->
+<!--                        android:text="Timer" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/compNameCard"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="365dp">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="135dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/compName"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:ems="20"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:hint="Competition Name"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:textAlignment="center" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/compNameFireBase"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/compName"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="25dp"-->
+<!--                        android:text="Button" />-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/chiefJudgeCard"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:visibility="gone">-->
+
+<!--                <LinearLayout-->
+
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player1Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="visible">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName1"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Team Name" />-->
+
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup1"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName1"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="32dp"-->
+<!--                                android:text="Player 1"-->
+<!--                                android:textSize="20sp" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table1"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Submit" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_1"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table1"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player1">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:visibility="gone" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player2Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup2"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/toPlayer1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName2"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Previous Player" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_2"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName2"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/toPlayer1"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="45dp"-->
+<!--                                android:text="Player 2"-->
+<!--                                android:textSize="20sp" />-->
+
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table2"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Button" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table2"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player2">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_2"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:inputType="numberDecimal"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_2"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:inputType="numberDecimal"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_2"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:inputType="numberDecimal"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_2"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:inputType="numberDecimal"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_2"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player3Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup3"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/toPlayer2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName3"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Previous Player" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_3"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName3"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/toPlayer2"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="45dp"-->
+<!--                                android:text="Player 3"-->
+<!--                                android:textSize="20sp" />-->
+
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table3"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Button" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table3"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player3">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_3"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_3"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_3"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_3"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_3"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player4Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup4"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/toPlayer3"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName4"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Previous Player" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_4"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName4"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/toPlayer3"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="45dp"-->
+<!--                                android:text="Player 4"-->
+<!--                                android:textSize="20sp" />-->
+
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table4"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Button" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table4"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player4">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_4"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_4"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_4"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_4"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_4"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player5Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup5"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/toPlayer4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName5"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Previous Player" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_5"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName5"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/toPlayer4"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="45dp"-->
+<!--                                android:text="Player 5"-->
+<!--                                android:textSize="20sp" />-->
+
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table5"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Button" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table5"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player5">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_5"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_5"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_5"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_5"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_5"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/player6Card"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/playerName6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/ageGroup6"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:ems="20"-->
+<!--                                android:gravity="center"-->
+<!--                                android:hint="Player Name"-->
+<!--                                android:inputType="textPersonName" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/toPlayer6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/playerName6"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Previous Player" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ResetButton_6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/ADD_6"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:text="Reset" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/teamName6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/ageGroup6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/teamName6"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:ems="20"-->
+<!--                                android:hint="Team Name" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/player6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/toPlayer6"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="45dp"-->
+<!--                                android:text="Player 6"-->
+<!--                                android:textSize="20sp" />-->
+
+
+<!--                            <Button-->
+<!--                                android:id="@+id/ADD_6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/table6"-->
+<!--                                android:layout_centerHorizontal="true"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:text="Button" />-->
+
+<!--                            <TableLayout-->
+<!--                                android:id="@+id/table6"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@id/player6">-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="1"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Difficulty"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/difficultyMark_6"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="3.4"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Combination"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/CombinationMark_6"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="1.6"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="3"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Execution"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/ExecutionMark_6"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="4.8"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="4"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Originality"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <EditText-->
+<!--                                        android:id="@+id/originalityMark_6"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:hint="0.2"-->
+<!--                                        android:textStyle="bold"-->
+<!--                                        android:inputType="numberDecimal"/>-->
+<!--                                </TableRow>-->
+
+<!--                                <TableRow>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="Total"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/Total_6"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="center"-->
+<!--                                        android:text="0.0"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </TableRow>-->
+
+<!--                            </TableLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/JudgeChoice"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/judge1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:text="Judge 1" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/judge2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/judge1"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="45dp"-->
+<!--                        android:text="Judge 2" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/judge3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/judge2"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="45dp"-->
+<!--                        android:text="Judge 3" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/judge4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/judge3"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="45dp"-->
+<!--                        android:text="Judge 4" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+<!--</RelativeLayout>-->
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingLeft="30dp"
+    android:paddingTop="40dp"
+    android:paddingRight="30dp"
+
+    android:background="@android:color/transparent"
+
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:visibility="gone">-->
+
+        <!--                <ListView-->
+        <!--                    android:id="@+id/listNetwork"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/conStatus"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center_horizontal"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Connection Status" />-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:orientation="horizontal">-->
+
+        <!--                    <Button-->
+        <!--                        android:id="@+id/OnOff"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:gravity="center|center_horizontal"-->
+        <!--                        android:text="Connect" />-->
+
+        <!--                    <Button-->
+        <!--                        android:id="@+id/Discover"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Join" />-->
+
+        <!--                    <Button-->
+        <!--                        android:id="@+id/Send"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Join" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/roomCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Code given by Chief Judge"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/createButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Judge 1"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/CompetitionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Name of the Competition"
+                android:inputType="textShortMessage" />
+
+            <EditText
+                android:id="@+id/playerRepresenting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Representing"
+                android:inputType="textShortMessage" />
+
+            <TextView
+                android:id="@+id/playerAgeCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Age Category"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 1"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/toPlayer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Player"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@android:color/transparent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 2"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView72"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView992"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView92"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView62"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/toPlayer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Player"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/textView173"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 3"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:id="@+id/textView153"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView73"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView993"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView93"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/toPlayer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Player"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/textView174"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 4"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:id="@+id/textView154"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView74"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView84"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView994"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView94"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView64"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/toPlayer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Player"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/textView175"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 5"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:id="@+id/textView155"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView75"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView995"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView95"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView65"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingTop="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/toPlayer5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Previous Player"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/textView176"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Player 6"
+                        android:textColor="#FF0000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/playerName_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Player Name" />
+
+                    <TextView
+                        android:id="@+id/textView156"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="SCORE"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/ADD_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Difficulty" />
+
+                            <EditText
+                                android:id="@+id/difficultyMark_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="3"
+                                android:gravity="center"
+                                android:hint="@string/difficultyHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView76"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Combination" />
+
+                            <EditText
+                                android:id="@+id/CombinationMark_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/combinationHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Execution" />
+
+                            <EditText
+                                android:id="@+id/ExecutionMark_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/executionHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView996"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Originality" />
+
+                            <EditText
+                                android:id="@+id/originalityMark_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/originalityHint"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView96"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="Minor Deduction" />
+
+                            <EditText
+                                android:id="@+id/MinorDeduction_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/minorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Major Deduction" />
+
+                            <EditText
+                                android:id="@+id/MajorDeduction_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/majorDeduction"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView66"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+
+                                android:gravity="center"
+                                android:text="TOTAL" />
+
+                            <TextView
+                                android:id="@+id/Total_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="10.00"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:visibility="invisible" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/ADD_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="SUBMIT" />
+
+                            <Button
+                                android:id="@+id/ResetButton_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Reset" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/returnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return Home" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
