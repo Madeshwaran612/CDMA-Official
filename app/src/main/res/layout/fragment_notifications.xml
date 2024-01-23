@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#3C00F8D3"
+
+
+    >
+
+
+
+
+    <ScrollView
+        android:id="@+id/afiliated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="30dp"
+        android:paddingTop="40dp"
+
+        android:paddingRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".Affiliated">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/tamizhan"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="#ffffff"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tamizhan123" />
+
+            <Button
+                android:id="@+id/imageButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Tamizhan MallaKhamb Sports Academy"
+                android:textColor="#F50057"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/RPFICF"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="#20CDB3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/icf" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="RPF Mallakhamb Training Centre, ICF "
+                android:textColor="#F50057"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewClubs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-7842166538836228/4131657792"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+            <ImageButton
+                android:id="@+id/CSK"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/silambampic" />
+
+            <Button
+                android:id="@+id/imageButton6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Chennai Silambam Kings Sports Academy"
+                android:textColor="#F50057"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/eagle"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="#20CDB3"
+                android:scaleType="fitXY"
+                android:src="@drawable/eagle" />
+
+            <Button
+                android:id="@+id/imageButton7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Eagle Mallakhamb Sports Academy"
+                android:textColor="#F50057"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/RPFayanavaram"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="#20CDB3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ayanavaram" />
+
+            <Button
+                android:id="@+id/imageButton8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="RPF Mallakhamb Training Centre, Ayanavaram"
+                android:textColor="#F50057"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

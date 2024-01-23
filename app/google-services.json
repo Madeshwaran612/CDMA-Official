@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873437908324",
+    "project_id": "cdma-official",
+    "storage_bucket": "cdma-official.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873437908324:android:a43a3aef50dfc1cbe13e71",
+        "android_client_info": {
+          "package_name": "com.madesh.CDMA_Official"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm5XWmPsGo-7koHmBMjTnX3PWG5PmliCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

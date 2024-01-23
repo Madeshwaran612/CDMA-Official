@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.Register"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Chennai District Mallakhamb "
+        android:textColor="#FA0606"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Association"
+        android:textColor="#FA0606"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aladin"
+        android:text="Create your Account"
+        android:textColor="#470505"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/FullName"
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:background="#37510202"
+        android:ems="10"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAlignment="center"
+        android:background="#37510202"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#37510202"
+        android:ems="10"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:background="#37510202"
+        android:hint="Phone"
+        android:layout_gravity="center"
+        android:inputType="phone"
+        android:ems="10"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/reg.but"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:text="Create My Account"
+        app:backgroundTint="#D5530505"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/regText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Already Registered? Login Here"
+        android:textColor="#FF0000"
+        android:layout_marginTop="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarReg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
