@@ -544,6 +544,7 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             });
             build.setCancelable(true);
+<<<<<<< HEAD
 
 //            playstore not working
 //
@@ -555,6 +556,16 @@ public class MainActivity3 extends AppCompatActivity {
 //
 //                }
 //            });
+=======
+            build.setNeutralButton("Rate Us", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.madesh.CDMA_Official")));
+
+                }
+            });
+>>>>>>> origin/main
             build.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

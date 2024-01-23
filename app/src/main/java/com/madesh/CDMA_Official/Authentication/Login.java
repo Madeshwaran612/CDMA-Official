@@ -1,5 +1,12 @@
 package com.madesh.CDMA_Official.Authentication;
 
+<<<<<<< HEAD
+=======
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+>>>>>>> origin/main
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +19,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+=======
+>>>>>>> origin/main
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,15 +34,21 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+<<<<<<< HEAD
 import com.madesh.CDMA_Official.MainActivity2;
+=======
+>>>>>>> origin/main
 import com.madesh.CDMA_Official.MainActivity3;
 import com.madesh.CDMA_Official.R;
 
 import java.util.HashMap;
 import java.util.Map;
 
+<<<<<<< HEAD
 import io.reactivex.annotations.NonNull;
 
+=======
+>>>>>>> origin/main
 public class Login extends AppCompatActivity {
 EditText mEmail, mPassword;
 Button mLoginButton;
@@ -134,7 +150,11 @@ FirebaseFirestore fStore;
                           collectionReference.add(user);
 
                           Toast.makeText(Login.this,"Logged in Successfully",Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
                           startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+=======
+                          startActivity(new Intent(getApplicationContext(), MainActivity3.class));
+>>>>>>> origin/main
                           finish();
                       } else {
                           Toast.makeText(Login.this,"Something went wrong, please check the details given"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();

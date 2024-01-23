@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|bottom"
                 android:src="@drawable/ic_outline_screen_share_24"/>
+<<<<<<< HEAD
 
             <Button
                 android:id="@+id/eVerify"
@@ -46,6 +47,17 @@
                 android:textSize="10sp"
                 android:visibility="visible"
                 app:backgroundTint="#4EB8C6" />
+=======
+            <Button
+                android:id="@+id/eVerify"
+                android:layout_width="112dp"
+                android:layout_height="38dp"
+                android:text="Verify Now"
+                android:textSize="10sp"
+                android:visibility="visible"
+                app:backgroundTint="#4EB8C6"
+                android:layout_gravity="top|end"/>
+>>>>>>> origin/main
 
             <Button
                 android:id="@+id/VText"

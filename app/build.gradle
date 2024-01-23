@@ -5,7 +5,11 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     compileSdkVersion 31
+=======
+    compileSdkVersion 30
+>>>>>>> origin/main
     buildToolsVersion "30.0.3"
 
     defaultConfig {
@@ -25,6 +29,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+<<<<<<< HEAD
     packagingOptions {
         jniLibs {
             excludes += ['com/itextpdf/io/font/cmap/*']
@@ -32,18 +37,33 @@ android {
         resources {
             excludes += ['com/itextpdf/io/font/cmap_info.txt', 'com/itextpdf/io/font/cmap/*']
         }
+=======
+    packagingOptions{
+        exclude 'com/itextpdf/io/font/cmap_info.txt'
+        exclude 'com/itextpdf/io/font/cmap/*'
+>>>>>>> origin/main
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
     namespace 'com.madesh.CDMA_Official'
     lint {
         abortOnError false
         checkReleaseBuilds false
     }
 
+=======
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+>>>>>>> origin/main
 
 }
 
@@ -68,8 +88,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:19.2.2'
     implementation 'com.google.firebase:firebase-database:19.7.0'
     implementation 'androidx.wear:wear:1.1.0'
+<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
     implementation 'com.google.firebase:firebase-firestore-ktx:24.6.1'
+=======
+>>>>>>> origin/main
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

@@ -1,5 +1,9 @@
 package com.madesh.CDMA_Official.Authentication;
 
+<<<<<<< HEAD
+=======
+import androidx.annotation.NonNull;
+>>>>>>> origin/main
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,13 +28,19 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+<<<<<<< HEAD
 import com.madesh.CDMA_Official.MainActivity2;
+=======
+>>>>>>> origin/main
 import com.madesh.CDMA_Official.MainActivity3;
 import com.madesh.CDMA_Official.R;
 import com.madesh.CDMA_Official.Utility.Users;
 
+<<<<<<< HEAD
 import io.reactivex.annotations.NonNull;
 
+=======
+>>>>>>> origin/main
 public class Register extends AppCompatActivity {
 
 EditText fullName, mEmail, mPassword,phone;
@@ -60,7 +70,11 @@ String userId;
         fStore = FirebaseFirestore.getInstance();
 
         if (firebaseAuth.getCurrentUser()!= null){
+<<<<<<< HEAD
             startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+=======
+            startActivity(new Intent(getApplicationContext(), MainActivity3.class));
+>>>>>>> origin/main
             finish();
         }
 
